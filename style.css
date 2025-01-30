@@ -41,6 +41,11 @@
     --Weight-medium: 500;
     --Weight-Bold: 700;
     --Weight-Extra-Bold: 800;
+
+    --line-height-1: 134%;
+}
+body {
+  font-size: 18px;
 }
 main {
   font-family: var(--Font-family);
@@ -49,11 +54,78 @@ main {
   align-items: center;
   min-block-size: 100vh;
 }
+/* Caracteristicas en comun */
 .card {
   display:flex;
   border: 1px solid var(--Dark-gray-blue);
   border-radius: 32px;
+  max-inline-size: 46.063rem;
 }
 .card__item {
   flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 2.125rem;
+  padding: 2.5rem;
+}
+.item__titulo {
+  font-size: 1.5rem;
+  font-weight: var(--Weight-Bold);
+}
+/* Caractericas indivuduales(La seccion de result) */
+.card__result {
+  align-items: center;
+  text-align: center;
+}
+.item__circulo {
+  padding: 2.125rem;
+  border: 1px solid black;
+  border-radius: 50%;
+  min-inline-size: 12.313rem;
+}
+.item__circulo--flex {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.625rem;
+}
+.promedio {
+  font-size: 4.5rem;
+  font-weight: var(--Weight-Extra-Bold);
+}
+.item--padding24 {
+  padding-block-end: 1rem;
+}
+.item__subTitulo {
+  font-size: 2rem;
+  font-weight: var(--Weight-Extra-Bold);
+}
+.item__descripcion {
+  line-height: var(--line-height-1);
+  padding: 0 1rem;
+  font-weight: var(--Weight-medium);
+}
+/* Caracteristicas individuales(La seccion de summary) */
+.item__boton {
+  padding: 1rem;
+  border-radius: 28rem;
+}
+.summary {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+.summary__score {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.75rem;
+  border-radius: 0.75rem;
+  border: 1px solid black;
+}
+.summary__score figure {
+  display: flex;
+  gap: 0.75rem;
+}
+.summary__score figcaption {
+  font-weight: var(--Weight-Bold);
 }
