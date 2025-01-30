@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prueba</title>
+    <style>
+      div {
+        border: 1px solid black;
+        width: 150px;
+        height: 150px;
+      }
+      p {
+        border: 1px solid red;
+        margin: 0;
+        vertical-align: middle;
+      }
+    </style>
+  </head>
+  <body>
+    <img src="" alt="" class="prueba" />
+    <p></p>
+    <br /><br /><br /><br /><br /><br />
+
+    <div>
+      <p>hola mi perro</p>
+    </div>
+
+    <script>
+      const img = document.querySelector(".prueba");
+      const p = document.querySelector("p");
+
+      p.textContent = "Pruebas Generales";
+      //   p.innerText = "<div>Hola mundo</div>";
+      //   p.innerHTML = "<div>Hola mundo</div>";
+      img.src = "./assets/images/icon-reaction.svg";
+      img.alt = "icon reaction";
+
+      console.log(p);
+      console.log(img);
+    </script>
+  </body>
+</html>
