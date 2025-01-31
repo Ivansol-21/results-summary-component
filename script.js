@@ -45,32 +45,36 @@ fetch('./data.json')
       */
       switch (figcaption.textContent) {
         case 'Reaction':
-          figcaption.classList.add('font--red')
-          div.classList.add('background--red')
+          figcaption.classList.add('font--red');
+          div.classList.add('background--red');
+          img.setAttribute('alt', `Icon_${dato.category}`);
           break;
         case 'Memory':
-          figcaption.classList.add('font--yellow')
-          div.classList.add('background--yellow')
+          figcaption.classList.add('font--yellow');
+          div.classList.add('background--yellow');
+          img.setAttribute('alt', `Icon_${dato.category}`);
           break;
         case 'Verbal':
-          figcaption.classList.add('font--Green')
-          div.classList.add('background--Green')
+          figcaption.classList.add('font--Green');
+          div.classList.add('background--Green');
+          img.setAttribute('alt', `Icon_${dato.category}`);
           break;
         case 'Visual':
-          figcaption.classList.add('font--blue')
-          div.classList.add('background--blue')
+          figcaption.classList.add('font--blue');
+          div.classList.add('background--blue');
+          img.setAttribute('alt', `Icon_${dato.category}`);
           break;
       
         default:
           break;
-      }
+      };
       // Agregando img y figcaption al figure
       figure.appendChild(img);
       figure.appendChild(figcaption);
 
       // Agregando el strong y el texto al p
-      p.appendChild(strong)
-      p.appendChild(document.createTextNode(' / 100'))
+      p.appendChild(strong);
+      p.appendChild(document.createTextNode(' / 100'));
 
 
       // Agregando el figure y el p al div
