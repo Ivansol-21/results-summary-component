@@ -42,7 +42,7 @@
     --Weight-Bold: 700;
     --Weight-Extra-Bold: 800;
 
-    --line-height-1: 134%;
+    --line-height-1: 148%;
 }
 body {
   font-size: 18px;
@@ -53,13 +53,15 @@ main {
   justify-content: center;
   align-items: center;
   min-block-size: 100vh;
+  background-color: var(--Pale-blue);
 }
 /* Caracteristicas en comun */
 .card {
   display:flex;
-  border: 1px solid var(--Dark-gray-blue);
   border-radius: 32px;
   max-inline-size: 46.063rem;
+  background-color: var(--White);
+  box-shadow: 1px 10px 20px -10px rgba(48, 59, 90, 0.2);;
 }
 .card__item {
   flex-basis: 50%;
@@ -67,6 +69,7 @@ main {
   flex-direction: column;
   gap: 2.125rem;
   padding: 2.5rem;
+  color: var(--Dark-gray-blue);
 }
 .item__titulo {
   font-size: 1.5rem;
@@ -76,10 +79,10 @@ main {
 .card__result {
   align-items: center;
   text-align: center;
+  border-radius: 1.75rem;
 }
 .item__circulo {
   padding: 2.125rem;
-  border: 1px solid black;
   border-radius: 50%;
   min-inline-size: 12.313rem;
 }
@@ -105,22 +108,48 @@ main {
   padding: 0 1rem;
   font-weight: var(--Weight-medium);
 }
+.card__result--font-color {
+  color: var(--White);
+}
+.card__result--background-color {
+  background-color: var(--Cobalt-blue);
+}
+.result--text-color{
+  color: var(--Light-lavender);
+}
+.Gradient-circulo {
+  background-image: linear-gradient(to top,var(--Persian-blue-circle), var(--Violet-blue-circle));
+}
+.Gradient-background {
+  background-image: linear-gradient(to bottom,var(--Light-slate-blue-background), var(--Light-royal-blue-background));
+}
+
 /* Caracteristicas individuales(La seccion de summary) */
 .item__boton {
   padding: 1rem;
-  border-radius: 28rem;
+  border-radius: 1.75rem;
+  font-weight: var(--Weight-Bold);
+  margin-block-start: 1.75rem;
+  background-color: var(--Dark-gray-blue);
+  color: var(--White);
+  transition: all 0.2s ease-in-out;
+}
+.item__boton:hover {
+  cursor: pointer;
+  background-color: var(--Cobalt-blue);
+  background-image: linear-gradient(to bottom,var(--Light-slate-blue-background), var(--Light-royal-blue-background));
 }
 .summary {
   display: flex;
   flex-direction: column;
   gap: 1.25rem;
+  color: rgba(48, 59, 90, 0.5);
 }
 .summary__score {
   display: flex;
   justify-content: space-between;
   padding: 0.75rem;
-  border-radius: 0.75rem;
-  border: 1px solid black;
+  border-radius: 0.625rem;
 }
 .summary__score figure {
   display: flex;
@@ -128,4 +157,33 @@ main {
 }
 .summary__score figcaption {
   font-weight: var(--Weight-Bold);
+}
+.strong--bold {
+  font-weight: var(--Weight-Bold);
+  color: var(--Dark-gray-blue);
+}
+/* Colores de texto y fondo */
+.font--red {
+  color: var(--Light-red);
+}
+.background--red {
+  background-color: rgba(255, 87, 87, 0.1);
+}
+.font--yellow {
+  color: var(--Orangey-yellow);
+}
+.background--yellow {
+  background-color: rgba(255, 176, 31, 0.1);
+}
+.font--Green {
+  color: var(--Green-teal);
+}
+.background--Green {
+  background-color: rgba(0, 189, 145, 0.1);
+}
+.font--blue {
+  color: var(--Cobalt-blue);
+}
+.background--blue {
+  background-color: rgba(17, 37, 212, 0.1);
 }
